@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <properties>
         <jdk.version>1.8</jdk.version>
+        <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -19,8 +20,44 @@
         <maven.compiler.testTarget>1.8</maven.compiler.testTarget>
         <maven.compiler.testSource>1.8</maven.compiler.testSource>
 
+        <retrofit.version>2.4.0</retrofit.version>
+        <guava.version>25.0-jre</guava.version>
+        <lombok.version>1.16.20</lombok.version>
+        <slf4j-api.version>1.7.25</slf4j-api.version>
+        <logback-classic.version>1.0.13</logback-classic.version>
+        <okhttp3.logging-interceptor.version>3.10.0</okhttp3.logging-interceptor.version>
+
+        <junit.jupiter.version>5.2.0</junit.jupiter.version>
+        <junit.platform.version>1.1.0</junit.platform.version>
+        <aspectj.version>1.9.1</aspectj.version>
+
+
+        <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+        <junit-platform-surefire-provider.version>1.1.0</junit-platform-surefire-provider.version>
+        <aspectj.version>1.8.10</aspectj.version>
+        <allure-junit5.version>2.6.0</allure-junit5.version>
+
+        <jackson1.version>1.9.11</jackson1.version>
+        <jackson2.version>2.7.3</jackson2.version>
 
     </properties>
+    <dependencies>
+        <!-- junit 5 start -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- junit 5 end -->
+    </dependencies>
     <build>
         <plugins>
             <plugin>
