@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 //https://junit.org/junit5/docs/current/user-guide/
-public class StandardTests {
+public class StandardTest {
     @Test
     void succeedingTest() {
         assertNotEquals(2, 1 + 1);
