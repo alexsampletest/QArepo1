@@ -42,6 +42,16 @@
 		<jackson2.version>2.7.3</jackson2.version>
 	</properties>
 	<dependencies>
+
+		<!-- allure start -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-junit5</artifactId>
+			<version>${allure-junit5.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- allure end -->
+
 		<!-- junit 5 start -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -86,7 +96,7 @@
 						</property>
 						<property>
 							<name>allure.results.directory</name>
-							<value>${project.build.directory}/allure-maven-plugin</value>
+							<value>${project.build.directory}/allure-results</value>
 						</property>
 					</systemProperties>
 				</configuration>
