@@ -67,6 +67,32 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- junit 5 end -->
+
+		<!-- REST ASSURED start -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<version>1.3</version>
+		</dependency>
+
+		<!-- sl4j start-->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j-api.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback-classic.version}</version>
+		</dependency>
+		<!-- sl4j end -->
 	</dependencies>
 	<build>
 		<plugins>
@@ -129,4 +155,12 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<name>mvnrepo</name>
+			<id>mvnrepo</id>
+			<url>http://repo.spring.io/plugins-release/</url>
+		</repository>
+	</repositories>
 </project>
